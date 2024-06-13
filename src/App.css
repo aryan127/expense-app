@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+
+  display: flex;
+  justify-content: center;
 }
 
 .App-logo {
@@ -27,6 +30,68 @@
 .App-link {
   color: #61dafb;
 }
+.expense-form{
+  border: 0px solid black;
+  /* width: 100px; */
+  padding: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px auto;
+  width: fit-content;
+}
+.expense-form div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.expense-form h3 {
+  margin-right: 10px;
+}
+
+.expense-form input {
+  /* padding: 0px; */
+  flex: 1;
+}
+.fruit {
+  border: 1px solid black; /* Add a border around each fruit */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  padding: 10px; /* Add padding inside the fruit container */
+  margin: 20px auto; /* Center and add margin around each fruit */
+  width: fit-content; /* Adjust width to fit content */
+  max-width: 300px; /* Limit maximum width of each fruit container */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack columns vertically */
+}
+
+.fruit-row {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out items evenly */
+  margin-bottom: 5px; /* Add margin bottom between rows */
+}
+
+.fruit-name, .fruit-price {
+  font-size: 16px; /* Adjust font size */
+}
+
+.fruit h3 {
+  margin: 0; /* Remove default margin from heading */
+  font-size: 18px; /* Adjust font size for the heading */
+}
+
+.fruit p {
+  margin: 5px 0; /* Add margin to paragraphs inside fruit */
+  font-size: 14px; /* Adjust font size for paragraphs */
+}
+
+/* Optional: Add styles for hover effect */
+.fruit:hover {
+  transform: translateY(-2px); /* Move up slightly on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
 
 @keyframes App-logo-spin {
   from {
