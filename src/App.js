@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 
@@ -12,12 +11,8 @@ function App() {
       name: name,
       price: price,
     };
-    setFruits((prevFruits) => {
-      if (!Array.isArray(prevFruits)) {
-        prevFruits = [];
-      }
-      return [...prevFruits, obj];
-    });
+
+    setFruits([...fruits, obj]);
     const p = parseInt(price);
     setTotalprice(totalprice + p);
     console.log(fruits);
